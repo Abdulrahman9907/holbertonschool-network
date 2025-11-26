@@ -2,7 +2,8 @@
 # Configures an Ubuntu server to change localhost to 127.0.0.2 and facebook.com to 8.8.8.8
 
 cp /etc/hosts ~/hosts.backup
-sed -i '/localhost/d' /etc/hosts
-sed -i '/facebook.com/d' /etc/hosts
-echo "127.0.0.2 localhost" >> /etc/hosts
-echo "8.8.8.8 facebook.com" >> /etc/hosts
+grep -v "localhost" /etc/hosts | grep -v "facebook.com" > /tmp/hosts.tmp
+echo "127.0.0.2 localhost" >> /tmp/hosts.tmp
+echo "8.8.8.8 facebook.com" >> /tmp/hosts.tmp
+cp /tmp/hosts.tmp /etc/hosts
+rm /tmp/hosts.tmp
