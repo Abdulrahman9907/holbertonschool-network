@@ -1,5 +1,9 @@
 # What Happens When You Type https://www.google.com in Your Browser and Press Enter
 
+**Published on Medium:** https://medium.com/@grateful_lawn_manatee_5/what-happens-when-you-type-https-www-google-com-in-your-browser-and-press-enter-2f0e4f3c7fe6
+
+---
+
 ## Introduction
 
 When you type a URL into your browser and press Enter, a complex series of events occurs behind the scenes. This article breaks down each step of the process, from DNS resolution to rendering the final web page.
